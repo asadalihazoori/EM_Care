@@ -179,14 +179,17 @@ export default function AddCustomer({ navigation }) {
 
         setImages(prevState => ({ ...prevState, ['image1']: image.path }));
         setInputs(prevState => ({ ...prevState, ['base64Img1']: image.data }));
+        setselectedImages(prevState => ({ ...prevState, ["image1"]: 'transparent' }))
       }
       else if (no == 2) {
         setImages(prevState => ({ ...prevState, ['image2']: image.path }));
         setInputs(prevState => ({ ...prevState, ['base64Img2']: image.data }));
+        setselectedImages(prevState => ({ ...prevState, ["image2"]: 'transparent' }))
       }
       else if (no == 3) {
         setImages(prevState => ({ ...prevState, ['image3']: image.path }));
         setInputs(prevState => ({ ...prevState, ['base64Img3']: image.data }));
+        setselectedImages(prevState => ({ ...prevState, ["image3"]: 'transparent' }))
       }
     }).catch(error => {
       handleAlert("Warning", "You Cancelled Image Selection", "image-off", false)
@@ -253,38 +256,62 @@ export default function AddCustomer({ navigation }) {
             <Text style={[styles.headerText]}>Longitude: {inputs.longitude}</Text>
 
           </View>
-
           <View style={{ flexDirection: 'row' }}>
-            <TouchableOpacity
-              onPress={() => takePhoto(1)}
-              style={[
-                styles.imagebox,
-                { borderColor: selectedImages.image1 }
-              ]}>
-              {images.image1 ? (
-                <Image source={{ uri: images.image1 }} style={styles.imageSelected} />
-              ) : (
-                <Image source={require('../assets/store-icon1.png')} style={styles.image} />
+            <View>
+              <TouchableOpacity
+                onPress={() => takePhoto(1)}
+                style={[
+                  styles.imagebox,
+                  { borderColor: selectedImages.image1 }
+                ]}>
+                {images.image1 ? (
+                  <Image source={{ uri: images.image1 }} style={styles.imageSelected} />
+                ) : (
+                  <Image source={require('../assets/store-icon1.png')} style={styles.image} />
+                )}
+              </TouchableOpacity>
+              {selectedImages.image1 == 'red' && (
+                <Text style={{
+                  marginTop: verticalScale(4),
+                  color: COLORS.red, fontSize: scale(11.5),
+                }}>Capture Image</Text>
               )}
-            </TouchableOpacity>
-            <TouchableOpacity
-              onPress={() => takePhoto(2)}
-              style={[styles.imagebox, { marginLeft: moderateScale(14), borderColor: selectedImages.image2, }]}>
-              {images.image2 ? (
-                <Image source={{ uri: images.image2 }} style={styles.imageSelected} />
-              ) : (
-                <Image source={require('../assets/store-icon1.png')} style={styles.image} />
+            </View>
+            <View style={{ marginLeft: moderateScale(14) }}>
+              <TouchableOpacity
+                onPress={() => takePhoto(2)}
+                style={[styles.imagebox, { borderColor: selectedImages.image2, }]}>
+                {images.image2 ? (
+                  <Image source={{ uri: images.image2 }} style={styles.imageSelected} />
+                ) : (
+                  <Image source={require('../assets/store-icon1.png')} style={styles.image} />
+                )}
+              </TouchableOpacity>
+              {selectedImages.image2 == 'red' && (
+                <Text style={{
+                  marginTop: verticalScale(4),
+                  color: COLORS.red, fontSize: scale(11.5),
+                }}>Capture Image</Text>
               )}
-            </TouchableOpacity>
-            <TouchableOpacity
-              onPress={() => takePhoto(3)}
-              style={[styles.imagebox, { marginLeft: moderateScale(14), borderColor: selectedImages.image3 }]}>
-              {images.image3 ? (
-                <Image source={{ uri: images.image3 }} style={styles.imageSelected} />
-              ) : (
-                <Image source={require('../assets/store-icon1.png')} style={styles.image} />
+            </View>
+            <View style={{ marginLeft: moderateScale(14) }}>
+              <TouchableOpacity
+                onPress={() => takePhoto(3)}
+                style={[styles.imagebox, { borderColor: selectedImages.image3 }]}>
+                {images.image3 ? (
+                  <Image source={{ uri: images.image3 }} style={styles.imageSelected} />
+                ) : (
+                  <Image source={require('../assets/store-icon1.png')} style={styles.image} />
+                )}
+              </TouchableOpacity>
+              { selectedImages.image3 == 'red'  && (
+                <Text style={{
+                  marginTop: verticalScale(4),
+                  color: COLORS.red,
+                  fontSize: scale(11.5),
+                }}>Capture Image</Text>
               )}
-            </TouchableOpacity>
+            </View>
           </View>
 
           <View style={{ marginTop: verticalScale(20), justifyContent: 'center', alignItems: 'center' }}>
