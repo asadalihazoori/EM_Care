@@ -1,6 +1,6 @@
 <lint-module
     format="1"
-    dir="E:\EM_Care\android\app"
+    dir="C:\Users\Hazoori\Documents\GitHub\EM_Care\android\app"
     name=":app"
     type="APP"
     maven="EM Care:app:"

@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import axios from 'axios';
+import sessionDetail from '../../conts/sessionDetail';
 
 export default class LoginRMS extends Component {
 
@@ -9,13 +10,13 @@ export default class LoginRMS extends Component {
 
     const requestBody = {
       params: {
-        db: 'Tabish_APIs',
+        db: sessionDetail.database,
         login: username,
         password: password
       }
     };
 
-    return axios.post('http://3.1.62.217:8069/web/session/authenticate', requestBody, {
+    return axios.post(`http://${sessionDetail.server_Ip}/web/session/authenticate`, requestBody, {
       headers: {
         'Content-Type': 'application/json',
       }
@@ -24,7 +25,6 @@ export default class LoginRMS extends Component {
         return response.data;
       })
       .catch(error => {
-        // console.log(error);
         throw error;
       });
   }

@@ -53,8 +53,8 @@ export default function Login({ navigation }) {
                 }
                 else if (response.error.code == 200) {
                     setLoading(false);
-                    handleError(' ', 'username');
-                    handleError('Incorrect username or password', 'password');
+                    handleError('Incorrect username', 'username');
+                    handleError('or Incorrect password', 'password');
                 }
 
             })
@@ -117,7 +117,7 @@ export default function Login({ navigation }) {
                     placeholderTextColor="#000000"
                     error={errors.username}
                     keyboardType='email-address'
-                    autoCapitalize = 'none'
+                    autoCapitalize='none'
                 />
 
                 <Input
@@ -128,6 +128,7 @@ export default function Login({ navigation }) {
                     placeholder="Password"
                     placeholderTextColor="#000000"
                     error={errors.password}
+                    autoCapitalize='none'
                     password
                 />
 

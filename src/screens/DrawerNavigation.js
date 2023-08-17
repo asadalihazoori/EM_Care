@@ -1,5 +1,5 @@
-import React from 'react'
-import { View, StyleSheet, Image } from 'react-native'
+import React, { useEffect } from 'react'
+import { BackHandler, View, StyleSheet, Image } from 'react-native'
 import { createDrawerNavigator, DrawerContentScrollView, DrawerItem } from '@react-navigation/drawer';
 import { Avatar, Title, Caption, Drawer, Text } from 'react-native-paper';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -13,6 +13,16 @@ import { scale, verticalScale, moderateScale } from 'react-native-size-matters';
 const ODrawer = createDrawerNavigator();
 
 export default function DrawerNavigation() {
+  useEffect(() => {
+    const backAction = () => {
+      BackHandler.exitApp();
+      return true;
+    };
+
+    const backHandler = BackHandler.addEventListener('hardwareBackPress', backAction);
+
+    return () => backHandler.remove();
+  }, []);
   const CustomDrawerContent = (props) => {
     return (
       <View style={{ flex: 1 }}>

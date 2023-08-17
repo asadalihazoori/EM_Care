@@ -1,9 +1,9 @@
 <libraries>
   <library
-      name="E:\EM_Care\android@@:react-native-android-location-enabler::release"
-      jars="E:\EM_Care\node_modules\react-native-android-location-enabler\android\build\.transforms\d4325d8b9c788c5867085b88e12f0f45\transformed\out\jars\classes.jar;E:\EM_Care\node_modules\react-native-android-location-enabler\android\build\.transforms\d4325d8b9c788c5867085b88e12f0f45\transformed\out\jars\libs\R.jar"
+      name="C:\Users\Hazoori\Documents\GitHub\EM_Care\android@@:react-native-android-location-enabler::release"
+      jars="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-android-location-enabler\android\build\.transforms\0e10aed7461008bb0ae92a695ce3e65e\transformed\out\jars\classes.jar;C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-android-location-enabler\android\build\.transforms\0e10aed7461008bb0ae92a695ce3e65e\transformed\out\jars\libs\R.jar"
       resolved="EM Care:react-native-android-location-enabler:unspecified"
-      folder="E:\EM_Care\node_modules\react-native-android-location-enabler\android\build\.transforms\d4325d8b9c788c5867085b88e12f0f45\transformed\out"
+      folder="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-android-location-enabler\android\build\.transforms\0e10aed7461008bb0ae92a695ce3e65e\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -52,10 +52,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="E:\EM_Care\android@@:react-native-async-storage_async-storage::release"
-      jars="E:\EM_Care\node_modules\@react-native-async-storage\async-storage\android\build\.transforms\62dd05c5098476530a31666132babe61\transformed\out\jars\classes.jar;E:\EM_Care\node_modules\@react-native-async-storage\async-storage\android\build\.transforms\62dd05c5098476530a31666132babe61\transformed\out\jars\libs\R.jar"
+      name="C:\Users\Hazoori\Documents\GitHub\EM_Care\android@@:react-native-async-storage_async-storage::release"
+      jars="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\@react-native-async-storage\async-storage\android\build\.transforms\25005ef58c953ccff7b33be39c73cfe4\transformed\out\jars\classes.jar;C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\@react-native-async-storage\async-storage\android\build\.transforms\25005ef58c953ccff7b33be39c73cfe4\transformed\out\jars\libs\R.jar"
       resolved="EM Care:react-native-async-storage_async-storage:unspecified"
-      folder="E:\EM_Care\node_modules\@react-native-async-storage\async-storage\android\build\.transforms\62dd05c5098476530a31666132babe61\transformed\out"
+      folder="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\@react-native-async-storage\async-storage\android\build\.transforms\25005ef58c953ccff7b33be39c73cfe4\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -65,10 +65,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="E:\EM_Care\android@@:react-native-community_geolocation::release"
-      jars="E:\EM_Care\node_modules\@react-native-community\geolocation\android\build\.transforms\6e8f187799737efe3ccede11cb608af7\transformed\out\jars\classes.jar;E:\EM_Care\node_modules\@react-native-community\geolocation\android\build\.transforms\6e8f187799737efe3ccede11cb608af7\transformed\out\jars\libs\R.jar"
+      name="C:\Users\Hazoori\Documents\GitHub\EM_Care\android@@:react-native-community_geolocation::release"
+      jars="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\@react-native-community\geolocation\android\build\.transforms\d0af2ee711eb38e04cac0e2b192621a5\transformed\out\jars\classes.jar;C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\@react-native-community\geolocation\android\build\.transforms\d0af2ee711eb38e04cac0e2b192621a5\transformed\out\jars\libs\R.jar"
       resolved="EM Care:react-native-community_geolocation:unspecified"
-      folder="E:\EM_Care\node_modules\@react-native-community\geolocation\android\build\.transforms\6e8f187799737efe3ccede11cb608af7\transformed\out"
+      folder="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\@react-native-community\geolocation\android\build\.transforms\d0af2ee711eb38e04cac0e2b192621a5\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -78,10 +78,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="E:\EM_Care\android@@:react-native-android-location-services-dialog-box::release"
-      jars="E:\EM_Care\node_modules\react-native-android-location-services-dialog-box\android\build\.transforms\52924c702692772fa8810300f2d80543\transformed\out\jars\classes.jar;E:\EM_Care\node_modules\react-native-android-location-services-dialog-box\android\build\.transforms\52924c702692772fa8810300f2d80543\transformed\out\jars\libs\R.jar"
+      name="C:\Users\Hazoori\Documents\GitHub\EM_Care\android@@:react-native-android-location-services-dialog-box::release"
+      jars="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-android-location-services-dialog-box\android\build\.transforms\fd9375627025b06aa3f4196351aaf44a\transformed\out\jars\classes.jar;C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-android-location-services-dialog-box\android\build\.transforms\fd9375627025b06aa3f4196351aaf44a\transformed\out\jars\libs\R.jar"
       resolved="EM Care:react-native-android-location-services-dialog-box:unspecified"
-      folder="E:\EM_Care\node_modules\react-native-android-location-services-dialog-box\android\build\.transforms\52924c702692772fa8810300f2d80543\transformed\out"
+      folder="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-android-location-services-dialog-box\android\build\.transforms\fd9375627025b06aa3f4196351aaf44a\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -91,10 +91,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="E:\EM_Care\android@@:react-native-device-info::release"
-      jars="E:\EM_Care\node_modules\react-native-device-info\android\build\.transforms\6e43c395cc417130bcc8704b4139ffe8\transformed\out\jars\classes.jar;E:\EM_Care\node_modules\react-native-device-info\android\build\.transforms\6e43c395cc417130bcc8704b4139ffe8\transformed\out\jars\libs\R.jar"
+      name="C:\Users\Hazoori\Documents\GitHub\EM_Care\android@@:react-native-device-info::release"
+      jars="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-device-info\android\build\.transforms\a53a92ab15ffaa3d5f074963308c5a77\transformed\out\jars\classes.jar;C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-device-info\android\build\.transforms\a53a92ab15ffaa3d5f074963308c5a77\transformed\out\jars\libs\R.jar"
       resolved="EM Care:react-native-device-info:unspecified"
-      folder="E:\EM_Care\node_modules\react-native-device-info\android\build\.transforms\6e43c395cc417130bcc8704b4139ffe8\transformed\out"
+      folder="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-device-info\android\build\.transforms\a53a92ab15ffaa3d5f074963308c5a77\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -104,10 +104,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="E:\EM_Care\android@@:react-native-geolocation-service::release"
-      jars="E:\EM_Care\node_modules\react-native-geolocation-service\android\build\.transforms\27f24c7a0fcb5ecfa366e24472a5de01\transformed\out\jars\classes.jar;E:\EM_Care\node_modules\react-native-geolocation-service\android\build\.transforms\27f24c7a0fcb5ecfa366e24472a5de01\transformed\out\jars\libs\R.jar"
+      name="C:\Users\Hazoori\Documents\GitHub\EM_Care\android@@:react-native-geolocation-service::release"
+      jars="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-geolocation-service\android\build\.transforms\9e9c85c31d25c3be8cf69a26a573d442\transformed\out\jars\classes.jar;C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-geolocation-service\android\build\.transforms\9e9c85c31d25c3be8cf69a26a573d442\transformed\out\jars\libs\R.jar"
       resolved="EM Care:react-native-geolocation-service:unspecified"
-      folder="E:\EM_Care\node_modules\react-native-geolocation-service\android\build\.transforms\27f24c7a0fcb5ecfa366e24472a5de01\transformed\out"
+      folder="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-geolocation-service\android\build\.transforms\9e9c85c31d25c3be8cf69a26a573d442\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -117,10 +117,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="E:\EM_Care\android@@:react-native-gesture-handler::release"
-      jars="E:\EM_Care\node_modules\react-native-gesture-handler\android\build\.transforms\694b0dbacdab2de83ec677e814f29def\transformed\out\jars\classes.jar;E:\EM_Care\node_modules\react-native-gesture-handler\android\build\.transforms\694b0dbacdab2de83ec677e814f29def\transformed\out\jars\libs\R.jar"
+      name="C:\Users\Hazoori\Documents\GitHub\EM_Care\android@@:react-native-gesture-handler::release"
+      jars="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-gesture-handler\android\build\.transforms\5b5693beab8da96132346eb0641d5c7b\transformed\out\jars\classes.jar;C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-gesture-handler\android\build\.transforms\5b5693beab8da96132346eb0641d5c7b\transformed\out\jars\libs\R.jar"
       resolved="EM Care:react-native-gesture-handler:unspecified"
-      folder="E:\EM_Care\node_modules\react-native-gesture-handler\android\build\.transforms\694b0dbacdab2de83ec677e814f29def\transformed\out"
+      folder="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-gesture-handler\android\build\.transforms\5b5693beab8da96132346eb0641d5c7b\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -130,10 +130,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="E:\EM_Care\android@@:react-native-image-crop-picker::release"
-      jars="E:\EM_Care\node_modules\react-native-image-crop-picker\android\build\.transforms\98937fa76bd0527a5ec6161c654cf7d1\transformed\out\jars\classes.jar;E:\EM_Care\node_modules\react-native-image-crop-picker\android\build\.transforms\98937fa76bd0527a5ec6161c654cf7d1\transformed\out\jars\libs\R.jar"
+      name="C:\Users\Hazoori\Documents\GitHub\EM_Care\android@@:react-native-image-crop-picker::release"
+      jars="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-image-crop-picker\android\build\.transforms\2c5b3a5d836fc25335b68d91afdc563e\transformed\out\jars\classes.jar;C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-image-crop-picker\android\build\.transforms\2c5b3a5d836fc25335b68d91afdc563e\transformed\out\jars\libs\R.jar"
       resolved="EM Care:react-native-image-crop-picker:unspecified"
-      folder="E:\EM_Care\node_modules\react-native-image-crop-picker\android\build\.transforms\98937fa76bd0527a5ec6161c654cf7d1\transformed\out"
+      folder="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-image-crop-picker\android\build\.transforms\2c5b3a5d836fc25335b68d91afdc563e\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -143,10 +143,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="E:\EM_Care\android@@:react-native-linear-gradient::release"
-      jars="E:\EM_Care\node_modules\react-native-linear-gradient\android\build\.transforms\9d8df2feab18f4f1a282843cf46c30e5\transformed\out\jars\classes.jar;E:\EM_Care\node_modules\react-native-linear-gradient\android\build\.transforms\9d8df2feab18f4f1a282843cf46c30e5\transformed\out\jars\libs\R.jar"
+      name="C:\Users\Hazoori\Documents\GitHub\EM_Care\android@@:react-native-linear-gradient::release"
+      jars="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-linear-gradient\android\build\.transforms\6bb2aec98dccdb2540f8a16e88a4008a\transformed\out\jars\classes.jar;C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-linear-gradient\android\build\.transforms\6bb2aec98dccdb2540f8a16e88a4008a\transformed\out\jars\libs\R.jar"
       resolved="EM Care:react-native-linear-gradient:unspecified"
-      folder="E:\EM_Care\node_modules\react-native-linear-gradient\android\build\.transforms\9d8df2feab18f4f1a282843cf46c30e5\transformed\out"
+      folder="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-linear-gradient\android\build\.transforms\6bb2aec98dccdb2540f8a16e88a4008a\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -156,10 +156,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="E:\EM_Care\android@@:react-native-reanimated::release"
-      jars="E:\EM_Care\node_modules\react-native-reanimated\android\build\.transforms\4e7e1078bf99d9396d9f5e42ee8b605d\transformed\out\jars\classes.jar;E:\EM_Care\node_modules\react-native-reanimated\android\build\.transforms\4e7e1078bf99d9396d9f5e42ee8b605d\transformed\out\jars\libs\R.jar"
+      name="C:\Users\Hazoori\Documents\GitHub\EM_Care\android@@:react-native-reanimated::release"
+      jars="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-reanimated\android\build\.transforms\d26ca3dc1639836324ff2193dd773d90\transformed\out\jars\classes.jar;C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-reanimated\android\build\.transforms\d26ca3dc1639836324ff2193dd773d90\transformed\out\jars\libs\R.jar"
       resolved="EM Care:react-native-reanimated:unspecified"
-      folder="E:\EM_Care\node_modules\react-native-reanimated\android\build\.transforms\4e7e1078bf99d9396d9f5e42ee8b605d\transformed\out"
+      folder="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-reanimated\android\build\.transforms\d26ca3dc1639836324ff2193dd773d90\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -169,10 +169,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="E:\EM_Care\android@@:react-native-safe-area-context::release"
-      jars="E:\EM_Care\node_modules\react-native-safe-area-context\android\build\.transforms\d28a5aee94b40e08b22636c086b83361\transformed\out\jars\classes.jar;E:\EM_Care\node_modules\react-native-safe-area-context\android\build\.transforms\d28a5aee94b40e08b22636c086b83361\transformed\out\jars\libs\R.jar"
+      name="C:\Users\Hazoori\Documents\GitHub\EM_Care\android@@:react-native-safe-area-context::release"
+      jars="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-safe-area-context\android\build\.transforms\02895702c1f8fb5e55971fcc31bd9551\transformed\out\jars\classes.jar;C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-safe-area-context\android\build\.transforms\02895702c1f8fb5e55971fcc31bd9551\transformed\out\jars\libs\R.jar"
       resolved="EM Care:react-native-safe-area-context:unspecified"
-      folder="E:\EM_Care\node_modules\react-native-safe-area-context\android\build\.transforms\d28a5aee94b40e08b22636c086b83361\transformed\out"
+      folder="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-safe-area-context\android\build\.transforms\02895702c1f8fb5e55971fcc31bd9551\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -182,10 +182,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="E:\EM_Care\android@@:react-native-screens::release"
-      jars="E:\EM_Care\node_modules\react-native-screens\android\build\.transforms\0366cf0287daf5344440b00d7c7862f5\transformed\out\jars\classes.jar;E:\EM_Care\node_modules\react-native-screens\android\build\.transforms\0366cf0287daf5344440b00d7c7862f5\transformed\out\jars\libs\R.jar"
+      name="C:\Users\Hazoori\Documents\GitHub\EM_Care\android@@:react-native-screens::release"
+      jars="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-screens\android\build\.transforms\d68bec1c5c68141b3b2c7a237c577ccd\transformed\out\jars\classes.jar;C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-screens\android\build\.transforms\d68bec1c5c68141b3b2c7a237c577ccd\transformed\out\jars\libs\R.jar"
       resolved="EM Care:react-native-screens:unspecified"
-      folder="E:\EM_Care\node_modules\react-native-screens\android\build\.transforms\0366cf0287daf5344440b00d7c7862f5\transformed\out"
+      folder="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-screens\android\build\.transforms\d68bec1c5c68141b3b2c7a237c577ccd\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -195,10 +195,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="E:\EM_Care\android@@:react-native-vector-icons::release"
-      jars="E:\EM_Care\node_modules\react-native-vector-icons\android\build\.transforms\c224c2cf1af8313b2e15a59484f489ba\transformed\out\jars\classes.jar;E:\EM_Care\node_modules\react-native-vector-icons\android\build\.transforms\c224c2cf1af8313b2e15a59484f489ba\transformed\out\jars\libs\R.jar"
+      name="C:\Users\Hazoori\Documents\GitHub\EM_Care\android@@:react-native-vector-icons::release"
+      jars="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-vector-icons\android\build\.transforms\1abcded500c4b8abe4c2247ece035565\transformed\out\jars\classes.jar;C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-vector-icons\android\build\.transforms\1abcded500c4b8abe4c2247ece035565\transformed\out\jars\libs\R.jar"
       resolved="EM Care:react-native-vector-icons:unspecified"
-      folder="E:\EM_Care\node_modules\react-native-vector-icons\android\build\.transforms\c224c2cf1af8313b2e15a59484f489ba\transformed\out"
+      folder="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-vector-icons\android\build\.transforms\1abcded500c4b8abe4c2247ece035565\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"

@@ -25,7 +25,7 @@ export default class CustomerAPI extends Component {
       method: 'POST',
       headers: headers,
       data: JSON.stringify(dataApi),
-      url: `http://3.1.62.217:8069/createCustomer/`
+      url: `http://${sessionDetail.server_Ip}/createCustomer/`
     };
 
     return axios(requestOptions)
@@ -55,7 +55,7 @@ export default class CustomerAPI extends Component {
       method: 'POST',
       headers: headers,
       data: JSON.stringify(dataApi),
-      url: `http://3.1.62.217:8069/getcustomer/`
+      url: `http:/${sessionDetail.server_Ip}/getcustomer/`
     };
 
     return axios(requestOptions)
@@ -98,7 +98,7 @@ export default class CustomerAPI extends Component {
       method: 'POST',
       headers: headers,
       data: JSON.stringify(dataApi),
-      url: `http://3.1.62.217:8069/editCustomer/`
+      url: `http://${sessionDetail.server_Ip}/editCustomer/`
     };
 
     return axios(requestOptions)
