@@ -1,17 +1,20 @@
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { View, Text, FlatList, StyleSheet, TouchableOpacity } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import COLORS from '../conts/colors';
 import Loader from '../components/Loader';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import CustomerAPI from '../ApiServices/RMS_Server/CustomerAPI';
 import CustomAlert from '../components/CustomAlert';
 import { scale, verticalScale, moderateScale } from 'react-native-size-matters';
+import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { update_customer } from '../redux/action';
 
 const SyncCustomer = ({ navigation }) => {
   const [loading, setLoading] = React.useState(false);
-  const [customerList, setCustomerList] = useState([]);
+  const customerList = useSelector((state) => state.addCustomer.data);
+  const dispatch = useDispatch();
 
   const [alertBox, setAlertBox] = useState({
     showBox: false,
@@ -20,25 +23,6 @@ const SyncCustomer = ({ navigation }) => {
     icon: null,
     confirmBtn: false
   });
-
-
-  useEffect(() => {
-    const unsubscribe = navigation.addListener('focus', () => {
-      loadCustomerList();
-    });
-    return unsubscribe;
-  }, [navigation]);
-
-  const loadCustomerList = async () => {
-    try {
-      const customerListData = await AsyncStorage.getItem('customers');
-      if (customerListData) {
-        setCustomerList(JSON.parse(customerListData));
-      }
-    } catch (error) {
-      console.error('Error loading customer list from local storage:', error);
-    }
-  };
 
   const handleAlert = (title, message, icon, confirmBtn) => {
     setAlertBox(prevState => ({ ...prevState, ["showBox"]: true, ["title"]: title, ["message"]: message, ["icon"]: icon, ["confirmBtn"]: confirmBtn }));
@@ -51,29 +35,18 @@ const SyncCustomer = ({ navigation }) => {
     setLoading(true);
     CustomerAPI.AddCustomer(item)
       .then((result) => {
-        console.log(result)
         if (result.result.status == 200) {
 
-          const updatedCustomerList = customerList.map((customer) =>
-            customer.name == item.name ? { ...customer, sync: true } : customer
-          );
-          AsyncStorage.setItem('customers', JSON.stringify(updatedCustomerList));
-
-
+          dispatch(update_customer(item))
           handleAlert("Confirmation", "Customer Registered Successfully.", "clipboard-check-outline", false);
-
-          // setLoading(false);
+          setLoading(false);
         }
-      }).then(() => {
-        setLoading(false)
-        loadCustomerList()
       })
       .catch(error => {
         handleAlert("Internet Required", "You are not conncted to any Network.", "wifi-off", false)
         setLoading(false);
       });
   }
-  // AsyncStorage.clear();
 
   const renderCustomerItem = ({ item }) => (
     <View style={styles.container}>

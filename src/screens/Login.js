@@ -5,11 +5,14 @@ import Input from '../components/Input';
 import Loader from '../components/Loader';
 import LoginRMS from '../ApiServices/RMS_Server/LoginRMS';
 import LinearGradient from 'react-native-linear-gradient';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import { scale, verticalScale, moderateScale } from 'react-native-size-matters';
 import CustomAlert from '../components/CustomAlert';
+import { useDispatch } from 'react-redux';
+import { login_customer } from '../redux/action';
 
 export default function Login({ navigation }) {
+    const dispatch = useDispatch();
+
     const [inputs, setInputs] = React.useState({
         username: null,
         password: null,
@@ -41,14 +44,9 @@ export default function Login({ navigation }) {
             .then(response => {
                 if (response.result) {
                     if (response.result.uid) {
-                        AsyncStorage.setItem('loginStatus', 'yes')
-                            .then(() => {
-                                setLoading(false);
-                                navigation.navigate("DrawerNavigation");
-                            })
-                            .catch(error => {
-                                console.log('Error saving login status:', error);
-                            });
+                        dispatch(login_customer(true))
+                        setLoading(false);
+                        navigation.navigate("DrawerNavigation");
                     }
                 }
                 else if (response.error.code == 200) {
@@ -61,7 +59,7 @@ export default function Login({ navigation }) {
             .catch((error) => {
                 setLoading(false);
                 console.log(error);
-                handleAlert("Internet Required", 'You are not conncted to any Network.', "wifi-off", false);
+                handleAlert("Internet Required", 'You are not connected to any Network.', "wifi-off", false);
             })
 
 

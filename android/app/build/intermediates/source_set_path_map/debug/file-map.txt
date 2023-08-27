@@ -45,4 +45,5 @@ com.emcare.app-packaged_res-43 C:\Users\Hazoori\Documents\GitHub\EM_Care\node_mo
 com.emcare.app-packaged_res-44 C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-reanimated\android\build\intermediates\packaged_res\debug
 com.emcare.app-packaged_res-45 C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-safe-area-context\android\build\intermediates\packaged_res\debug
 com.emcare.app-packaged_res-46 C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-screens\android\build\intermediates\packaged_res\debug
-com.emcare.app-packaged_res-47 C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-vector-icons\android\build\intermediates\packaged_res\debug
+com.emcare.app-packaged_res-47 C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-splash-screen\android\build\intermediates\packaged_res\debug
+com.emcare.app-packaged_res-48 C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-vector-icons\android\build\intermediates\packaged_res\debug

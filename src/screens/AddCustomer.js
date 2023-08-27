@@ -7,11 +7,14 @@ import CustomButton from '../components/Button';
 import ImagePicker from 'react-native-image-crop-picker';
 import AccessLocation from '../ApiServices/AccessLocation';
 import CustomAlert from '../components/CustomAlert';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import LinearGradient from 'react-native-linear-gradient';
 import { scale, verticalScale, moderateScale } from 'react-native-size-matters';
+import { useDispatch } from 'react-redux';
+import { add_customer } from '../redux/action';
 
 export default function AddCustomer({ navigation }) {
+
+  const dispatch = useDispatch();
   const [inputs, setInputs] = React.useState({
     name: null,
     phone: null,
@@ -121,7 +124,6 @@ export default function AddCustomer({ navigation }) {
 
   function addCustomer() {
     if (inputs.base64Img1 != null && inputs.base64Img2 != null && inputs.base64Img3 != null) {
-      // Create a new customer object with the required data
       const newCustomer = {
         name: inputs.name,
         phone: inputs.phone,
@@ -134,29 +136,8 @@ export default function AddCustomer({ navigation }) {
         sync: inputs.sync,
       };
 
-      AsyncStorage.getItem('customers', (err, customers) => {
-        if (err) {
-          console.error('Error fetching customers from local storage:', err);
-          return;
-        }
-
-        let parsedCustomers = [];
-
-        if (customers) {
-          parsedCustomers = JSON.parse(customers);
-        }
-
-        parsedCustomers.push(newCustomer);
-
-        AsyncStorage.setItem('customers', JSON.stringify(parsedCustomers))
-          .then(() => {
-            console.log('Customer added successfully:');
-            handleAlert("Confirmation", "Customer Added Successfully !.", "account-check-outline", false);
-          })
-          .catch(error => {
-            console.log('Error saving login status:', error);
-          });
-      });
+      dispatch(add_customer(newCustomer))
+      handleAlert("Confirmation", "Customer Added Successfully !.", "account-check-outline", false);
     }
   }
 
@@ -304,7 +285,7 @@ export default function AddCustomer({ navigation }) {
                   <Image source={require('../assets/store-icon1.png')} style={styles.image} />
                 )}
               </TouchableOpacity>
-              { selectedImages.image3 == 'red'  && (
+              {selectedImages.image3 == 'red' && (
                 <Text style={{
                   marginTop: verticalScale(4),
                   color: COLORS.red,

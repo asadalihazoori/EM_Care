@@ -1505,6 +1505,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable redbox_top_border_background
 drawable rn_edit_text_material
+drawable screen
 drawable src_assets_logo_emcare
 drawable src_assets_product
 drawable src_assets_storeicon1
@@ -1982,6 +1983,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dev_loading_view
 layout fps_view
+layout launch_screen
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -2046,9 +2048,9 @@ menu example_menu
 menu example_menu2
 menu ucrop_menu_activity
 mipmap ic_launcher
-mipmap ic_launcher_1
-mipmap ic_launcher_round
-mipmap ic_launcher_round_1
+mipmap ic_launcher_background
+mipmap ic_launcher_foreground
+mipmap ic_launcher_monochrome
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
 string abc_action_bar_up_description
@@ -2504,6 +2506,9 @@ style ShapeAppearanceOverlay_TopLeftCut
 style ShapeAppearanceOverlay_TopRightDifferentCornerSize
 style SpinnerDatePickerDialog
 style SpinnerDatePickerStyle
+style SplashScreen_Fullscreen
+style SplashScreen_SplashAnimation
+style SplashScreen_SplashTheme
 style Test_ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Day
 style Test_Theme_MaterialComponents_MaterialCalendar
 style Test_Widget_MaterialComponents_MaterialCalendar

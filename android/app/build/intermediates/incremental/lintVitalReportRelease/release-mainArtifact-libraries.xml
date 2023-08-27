@@ -195,6 +195,19 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
+      name="C:\Users\Hazoori\Documents\GitHub\EM_Care\android@@:react-native-splash-screen::release"
+      jars="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-splash-screen\android\build\.transforms\99da2bb0c525940f50a49d608a23e380\transformed\out\jars\classes.jar;C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-splash-screen\android\build\.transforms\99da2bb0c525940f50a49d608a23e380\transformed\out\jars\libs\R.jar"
+      resolved="EM Care:react-native-splash-screen:unspecified"
+      folder="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-splash-screen\android\build\.transforms\99da2bb0c525940f50a49d608a23e380\transformed\out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="C:\Users\Hazoori\Documents\GitHub\EM_Care\android@@:react-native-vector-icons::release"
       jars="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-vector-icons\android\build\.transforms\1abcded500c4b8abe4c2247ece035565\transformed\out\jars\classes.jar;C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-vector-icons\android\build\.transforms\1abcded500c4b8abe4c2247ece035565\transformed\out\jars\libs\R.jar"
       resolved="EM Care:react-native-vector-icons:unspecified"

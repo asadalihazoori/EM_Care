@@ -1,15 +1,17 @@
 import React, { useEffect } from 'react';
 import { View, Text } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useDispatch } from 'react-redux';
+import { login_customer } from '../redux/action';
 
 function Logout() {
   const navigation = useNavigation();
+  const dispatch = useDispatch();
 
   useEffect(() => {
+    dispatch(login_customer(false));
     navigation.navigate('Login');
 
-    AsyncStorage.setItem('loginStatus', 'false');
 
     navigation.reset({
       index: 0,
