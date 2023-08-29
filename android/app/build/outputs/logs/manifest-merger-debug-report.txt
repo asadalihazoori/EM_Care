@@ -8,11 +8,11 @@ MERGED from C:\Users\Hazoori\Documents\GitHub\EM_Care\android\app\src\main\Andro
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.125.0] C:\Users\Hazoori\.gradle\caches\transforms-3\d3cca00246c663d3c66c0792858497b5\transformed\jetified-flipper-network-plugin-0.125.0\AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] C:\Users\Hazoori\.gradle\caches\transforms-3\d583b133a68ceecad4ecdddb740e6639\transformed\jetified-flipper-fresco-plugin-0.125.0\AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper:0.125.0] C:\Users\Hazoori\.gradle\caches\transforms-3\236929aa564a4c4dfa1b417642a2a2ae\transformed\jetified-flipper-0.125.0\AndroidManifest.xml:8:1-18:12
-MERGED from [:react-native-splash-screen] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-splash-screen\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-async-storage_async-storage] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\@react-native-async-storage\async-storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-community_geolocation] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\@react-native-community\geolocation\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-android-location-enabler] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-android-location-enabler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-device-info] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-device-info\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-fs] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-fs\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-geolocation-service] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-geolocation-service\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-gesture-handler] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-33:12
@@ -20,6 +20,7 @@ MERGED from [:react-native-linear-gradient] C:\Users\Hazoori\Documents\GitHub\EM
 MERGED from [:react-native-reanimated] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-reanimated\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-safe-area-context] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-splash-screen] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-splash-screen\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-vector-icons] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.react:react-android:0.71.6] C:\Users\Hazoori\.gradle\caches\transforms-3\e130ab6804e166a1486f733ffc21e975\transformed\jetified-react-android-0.71.6-debug\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] C:\Users\Hazoori\.gradle\caches\transforms-3\07d090cae19bc906d0866f7f6360e513\transformed\swiperefreshlayout-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -149,6 +150,8 @@ ADDED from C:\Users\Hazoori\Documents\GitHub\EM_Care\android\app\src\main\Androi
 		ADDED from C:\Users\Hazoori\Documents\GitHub\EM_Care\android\app\src\main\AndroidManifest.xml:8:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from C:\Users\Hazoori\Documents\GitHub\EM_Care\android\app\src\main\AndroidManifest.xml:9:5-81
+MERGED from [:react-native-fs] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-fs\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-81
+MERGED from [:react-native-fs] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-fs\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-81
 MERGED from [:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:5-81
 MERGED from [:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:5-81
 	android:name
@@ -250,8 +253,6 @@ MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] C:\Users\Hazoor
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] C:\Users\Hazoori\.gradle\caches\transforms-3\d583b133a68ceecad4ecdddb740e6639\transformed\jetified-flipper-fresco-plugin-0.125.0\AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper:0.125.0] C:\Users\Hazoori\.gradle\caches\transforms-3\236929aa564a4c4dfa1b417642a2a2ae\transformed\jetified-flipper-0.125.0\AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper:0.125.0] C:\Users\Hazoori\.gradle\caches\transforms-3\236929aa564a4c4dfa1b417642a2a2ae\transformed\jetified-flipper-0.125.0\AndroidManifest.xml:11:5-13:41
-MERGED from [:react-native-splash-screen] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-splash-screen\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-splash-screen] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-splash-screen\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-async-storage_async-storage] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\@react-native-async-storage\async-storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-async-storage_async-storage] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\@react-native-async-storage\async-storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_geolocation] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\@react-native-community\geolocation\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
@@ -260,6 +261,8 @@ MERGED from [:react-native-android-location-enabler] C:\Users\Hazoori\Documents\
 MERGED from [:react-native-android-location-enabler] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-android-location-enabler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-device-info] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-device-info\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-device-info] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-device-info\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-fs] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-fs\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-fs] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-fs\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-geolocation-service] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-geolocation-service\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-geolocation-service] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-geolocation-service\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-gesture-handler] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
@@ -274,6 +277,8 @@ MERGED from [:react-native-safe-area-context] C:\Users\Hazoori\Documents\GitHub\
 MERGED from [:react-native-safe-area-context] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-screens] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-screens] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-splash-screen] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-splash-screen\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-splash-screen] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-splash-screen\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-vector-icons] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-vector-icons] C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-android:0.71.6] C:\Users\Hazoori\.gradle\caches\transforms-3\e130ab6804e166a1486f733ffc21e975\transformed\jetified-react-android-0.71.6-debug\AndroidManifest.xml:5:5-7:41

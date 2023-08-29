@@ -8,7 +8,8 @@ import ProductsAPI from '../ApiServices/RMS_Server/ProductsAPI';
 import CustomButton from '../components/Button';
 
 export default function Products({ navigation, route }) {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(true);
   const [products, setProducts] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [filteredData, setFilteredData] = useState([]);
@@ -16,14 +17,14 @@ export default function Products({ navigation, route }) {
   // const [selectedProducts, setSelectedProducts] = useState(null);
 
 
-  useEffect(() => {
-    const unsubscribe = navigation.addListener('focus', () => {
-      getProducts();
+  // useEffect(() => {
+  //   const unsubscribe = navigation.addListener('focus', () => {
+  //     getProducts();
 
-    });
+  //   });
 
-    return unsubscribe;
-  }, [navigation]);
+  //   return unsubscribe;
+  // }, [navigation]);
 
 
   const validate = () => {

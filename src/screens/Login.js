@@ -46,7 +46,7 @@ export default function Login({ navigation }) {
                     if (response.result.uid) {
                         dispatch(login_customer(true))
                         setLoading(false);
-                        navigation.navigate("DrawerNavigation");
+                        navigation.replace("DrawerNavigation");
                     }
                 }
                 else if (response.error.code == 200) {

@@ -22,15 +22,10 @@ export default function App() {
                 <NavigationContainer>
                     <Stack.Navigator initialRouteName={loggedIn ? 'DrawerNavigation' : 'Login'}>
 
-                        <Stack.Screen name='Login' component={Login} options={{ headerShown: false }} />
 
                         <Stack.Screen name='DrawerNavigation' component={DrawerNavigation}
                             options={{ headerShown: false }} />
-
-
-                        <Stack.Screen name='AddCustomer' component={AddCustomer} />
-                        <Stack.Screen name='CustomerList' component={SyncCustomer} />
-                        <Stack.Screen name='Loading' component={LoadingScreen} options={{ headerShown: false }} />
+                        <Stack.Screen name='Login' component={Login} options={{ headerShown: false }} />
 
 
                     </Stack.Navigator>

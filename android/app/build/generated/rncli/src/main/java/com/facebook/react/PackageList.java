@@ -21,6 +21,8 @@ import com.heanoria.library.reactnative.locationenabler.RNAndroidLocationEnabler
 import com.showlocationservicesdialogbox.LocationServicesDialogBoxPackage;
 // react-native-device-info
 import com.learnium.RNDeviceInfo.RNDeviceInfo;
+// react-native-fs
+import com.rnfs.RNFSPackage;
 // react-native-geolocation-service
 import com.agontuk.RNFusedLocation.RNFusedLocationPackage;
 // react-native-gesture-handler
@@ -89,6 +91,7 @@ public class PackageList {
       new RNAndroidLocationEnablerPackage(),
       new LocationServicesDialogBoxPackage(),
       new RNDeviceInfo(),
+      new RNFSPackage(),
       new RNFusedLocationPackage(),
       new RNGestureHandlerPackage(),
       new PickerPackage(),

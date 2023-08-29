@@ -13,16 +13,17 @@ import { scale, verticalScale, moderateScale } from 'react-native-size-matters';
 const ODrawer = createDrawerNavigator();
 
 export default function DrawerNavigation() {
-  useEffect(() => {
-    const backAction = () => {
-      BackHandler.exitApp();
-      return true;
-    };
+  // useEffect(() => {
+  //   const backAction = () => {
+  //     BackHandler.exitApp();
+  //     return true;
+  //   };
 
-    const backHandler = BackHandler.addEventListener('hardwareBackPress', backAction);
+  //   const backHandler = BackHandler.addEventListener('hardwareBackPress', backAction);
 
-    return () => backHandler.remove();
-  }, []);
+  //   return () => backHandler.remove();
+  // }, []);
+
   const CustomDrawerContent = (props) => {
     return (
       <View style={{ flex: 1 }}>
@@ -72,7 +73,7 @@ export default function DrawerNavigation() {
                   props.navigation.navigate('Customers List');
                 }}
               /> */}
-              {/* <DrawerItem
+              <DrawerItem
                 icon={({ color, size }) => (
                   // <Image source={require('../assets/icons/customer.png')} style={{height: size, width: size, tintColor: COLORS.blue}} />
                   <Icon name="atom" color={color} size={size} style={{ color: COLORS.blue }} />
@@ -81,7 +82,7 @@ export default function DrawerNavigation() {
                 onPress={() => {
                   props.navigation.navigate('Products');
                 }}
-              /> */}
+              />
               {/* <DrawerItem
                 icon={({ color, size }) => (
                   // <Image source={require('../assets/icons/customer.png')} style={{height: size, width: size, tintColor: COLORS.blue}} />
@@ -115,19 +116,17 @@ export default function DrawerNavigation() {
     <ODrawer.Navigator
       initialRouteName="Add Customer"
       drawerContent={(props) => <CustomDrawerContent {...props} />}
-      screenOptions={{ // Add this screenOptions prop
-        headerStyle: { backgroundColor: COLORS.blue }, // Set the header background color to red
-        headerTintColor: '#fff', // Set the header text color to white
-        headerTitleStyle: { fontWeight: 'bold' }, // Set the header title text style
+      screenOptions={{
+        headerStyle: { backgroundColor: COLORS.blue },
+        headerTintColor: '#fff',
+        headerTitleStyle: { fontWeight: 'bold' },
       }}
     >
-
-      <ODrawer.Screen name="Logout" component={Logout} />
-
 
       <ODrawer.Screen name="Add Customer" component={AddCustomer} />
       <ODrawer.Screen name="Products" component={Products} />
       <ODrawer.Screen name="Sync Customers" component={SyncCustomer} />
+      <ODrawer.Screen name="Logout" component={Logout} />
     </ODrawer.Navigator>
   );
 }

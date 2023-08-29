@@ -104,6 +104,19 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
+      name="C:\Users\Hazoori\Documents\GitHub\EM_Care\android@@:react-native-fs::release"
+      jars="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-fs\android\build\.transforms\bfa2d2b7c3dead4d6d5354dc73abdbb8\transformed\out\jars\classes.jar;C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-fs\android\build\.transforms\bfa2d2b7c3dead4d6d5354dc73abdbb8\transformed\out\jars\libs\R.jar"
+      resolved="EM Care:react-native-fs:unspecified"
+      folder="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-fs\android\build\.transforms\bfa2d2b7c3dead4d6d5354dc73abdbb8\transformed\out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="C:\Users\Hazoori\Documents\GitHub\EM_Care\android@@:react-native-geolocation-service::release"
       jars="C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-geolocation-service\android\build\.transforms\9e9c85c31d25c3be8cf69a26a573d442\transformed\out\jars\classes.jar;C:\Users\Hazoori\Documents\GitHub\EM_Care\node_modules\react-native-geolocation-service\android\build\.transforms\9e9c85c31d25c3be8cf69a26a573d442\transformed\out\jars\libs\R.jar"
       resolved="EM Care:react-native-geolocation-service:unspecified"
