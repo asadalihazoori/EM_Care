@@ -73,7 +73,7 @@ export default function DrawerNavigation() {
                   props.navigation.navigate('Customers List');
                 }}
               /> */}
-              <DrawerItem
+              {/* <DrawerItem
                 icon={({ color, size }) => (
                   // <Image source={require('../assets/icons/customer.png')} style={{height: size, width: size, tintColor: COLORS.blue}} />
                   <Icon name="atom" color={color} size={size} style={{ color: COLORS.blue }} />
@@ -82,7 +82,7 @@ export default function DrawerNavigation() {
                 onPress={() => {
                   props.navigation.navigate('Products');
                 }}
-              />
+              /> */}
               {/* <DrawerItem
                 icon={({ color, size }) => (
                   // <Image source={require('../assets/icons/customer.png')} style={{height: size, width: size, tintColor: COLORS.blue}} />

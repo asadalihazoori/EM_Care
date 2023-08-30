@@ -7,7 +7,6 @@ import CustomButton from '../components/Button';
 import ImagePicker from 'react-native-image-crop-picker';
 import AccessLocation from '../ApiServices/AccessLocation';
 import CustomAlert from '../components/CustomAlert';
-import LinearGradient from 'react-native-linear-gradient';
 import { scale, verticalScale, moderateScale } from 'react-native-size-matters';
 import { useDispatch } from 'react-redux';
 import { add_customer } from '../redux/action';
@@ -19,17 +18,11 @@ export default function AddCustomer({ navigation }) {
     name: null,
     phone: null,
     address: null,
-    base64Img1: null,
-    base64Img2: null,
-    base64Img3: null,
+    imgPath1: null,
+    imgPath2: null,
+    imgPath3: null,
     latitude: null,
     longitude: null
-  });
-
-  const [images, setImages] = useState({
-    image1: null,
-    image2: null,
-    image3: null
   });
 
   const [selectedImages, setselectedImages] = React.useState({
@@ -64,15 +57,14 @@ export default function AddCustomer({ navigation }) {
       name: null,
       phone: null,
       address: null,
-      base64Img1: null,
-      base64Img2: null,
-      base64Img3: null,
+      imgPath1: null,
+      imgPath2: null,
+      imgPath3: null,
       latitude: null,
       longitude: null,
       sync: false
     });
 
-    setImages({ image1: null, image2: null, image3: null });
     setselectedImages({ image1: "transparent", image2: 'transparent', image3: 'transparent' })
   }
 
@@ -103,15 +95,15 @@ export default function AddCustomer({ navigation }) {
       isValid = false;
     }
 
-    if (!inputs.base64Img1) {
+    if (!inputs.imgPath1) {
       setselectedImages(prevState => ({ ...prevState, ["image1"]: COLORS.red }))
       isValid = false;
     }
-    if (!inputs.base64Img2) {
+    if (!inputs.imgPath2) {
       setselectedImages(prevState => ({ ...prevState, ["image2"]: COLORS.red }))
       isValid = false;
     }
-    if (!inputs.base64Img3) {
+    if (!inputs.imgPath3) {
       setselectedImages(prevState => ({ ...prevState, ["image3"]: COLORS.red }))
       isValid = false;
     }
@@ -121,16 +113,15 @@ export default function AddCustomer({ navigation }) {
     }
   };
 
-
   function addCustomer() {
-    if (inputs.base64Img1 != null && inputs.base64Img2 != null && inputs.base64Img3 != null) {
+    if (inputs.imgPath1 != null && inputs.imgPath2 != null && inputs.imgPath3 != null) {
       const newCustomer = {
         name: inputs.name,
         phone: inputs.phone,
         address: inputs.address,
-        base64Img1: inputs.base64Img1,
-        base64Img2: inputs.base64Img2,
-        base64Img3: inputs.base64Img3,
+        imgPath1: inputs.imgPath1,
+        imgPath2: inputs.imgPath2,
+        imgPath3: inputs.imgPath3,
         latitude: inputs.latitude,
         longitude: inputs.longitude,
         sync: inputs.sync,
@@ -154,22 +145,19 @@ export default function AddCustomer({ navigation }) {
       width: 300,
       height: 400,
       cropping: true,
-      includeBase64: true
+      includeBase64: false
     }).then(image => {
       if (no == 1) {
 
-        setImages(prevState => ({ ...prevState, ['image1']: image.path }));
-        setInputs(prevState => ({ ...prevState, ['base64Img1']: image.data }));
+        setInputs(prevState => ({ ...prevState, ['imgPath1']: image.path }));
         setselectedImages(prevState => ({ ...prevState, ["image1"]: 'transparent' }))
       }
       else if (no == 2) {
-        setImages(prevState => ({ ...prevState, ['image2']: image.path }));
-        setInputs(prevState => ({ ...prevState, ['base64Img2']: image.data }));
+        setInputs(prevState => ({ ...prevState, ['imgPath2']: image.path }));
         setselectedImages(prevState => ({ ...prevState, ["image2"]: 'transparent' }))
       }
       else if (no == 3) {
-        setImages(prevState => ({ ...prevState, ['image3']: image.path }));
-        setInputs(prevState => ({ ...prevState, ['base64Img3']: image.data }));
+        setInputs(prevState => ({ ...prevState, ['imgPath3']: image.path }));
         setselectedImages(prevState => ({ ...prevState, ["image3"]: 'transparent' }))
       }
     }).catch(error => {
@@ -188,7 +176,6 @@ export default function AddCustomer({ navigation }) {
       .catch((error) => {
         handleAlert("Internet Required", error, "bomb", false);
       });
-
   }
 
   return (
@@ -245,8 +232,8 @@ export default function AddCustomer({ navigation }) {
                   styles.imagebox,
                   { borderColor: selectedImages.image1 }
                 ]}>
-                {images.image1 ? (
-                  <Image source={{ uri: images.image1 }} style={styles.imageSelected} />
+                {inputs.imgPath1 ? (
+                  <Image source={{ uri: inputs.imgPath1 }} style={styles.imageSelected} />
                 ) : (
                   <Image source={require('../assets/store-icon1.png')} style={styles.image} />
                 )}
@@ -262,8 +249,8 @@ export default function AddCustomer({ navigation }) {
               <TouchableOpacity
                 onPress={() => takePhoto(2)}
                 style={[styles.imagebox, { borderColor: selectedImages.image2, }]}>
-                {images.image2 ? (
-                  <Image source={{ uri: images.image2 }} style={styles.imageSelected} />
+                {inputs.imgPath2 ? (
+                  <Image source={{ uri: inputs.imgPath2 }} style={styles.imageSelected} />
                 ) : (
                   <Image source={require('../assets/store-icon1.png')} style={styles.image} />
                 )}
@@ -279,8 +266,8 @@ export default function AddCustomer({ navigation }) {
               <TouchableOpacity
                 onPress={() => takePhoto(3)}
                 style={[styles.imagebox, { borderColor: selectedImages.image3 }]}>
-                {images.image3 ? (
-                  <Image source={{ uri: images.image3 }} style={styles.imageSelected} />
+                {inputs.imgPath3 ? (
+                  <Image source={{ uri: inputs.imgPath3 }} style={styles.imageSelected} />
                 ) : (
                   <Image source={require('../assets/store-icon1.png')} style={styles.image} />
                 )}

@@ -10,11 +10,22 @@ import { scale, verticalScale, moderateScale } from 'react-native-size-matters';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import { update_customer } from '../redux/action';
+import RNFS from 'react-native-fs';
 
 const SyncCustomer = ({ navigation }) => {
   const [loading, setLoading] = React.useState(false);
   const customerList = useSelector((state) => state.addCustomer.data);
   const dispatch = useDispatch();
+
+  const imageToBase64 = async (filePath) => {
+    try {
+      const imageContent = await RNFS.readFile(filePath, 'base64');
+      return imageContent;
+    } catch (error) {
+      console.error('Error converting image to base64:', error);
+      return null;
+    }
+  };
 
   const [alertBox, setAlertBox] = useState({
     showBox: false,
@@ -31,19 +42,42 @@ const SyncCustomer = ({ navigation }) => {
   const onCloseAlert = () => {
     setAlertBox(prevState => ({ ...prevState, ["showBox"]: false }));
   };
-  const handleSyncIconPress = (item) => {
+  const handleSyncIconPress = async (item) => {
     setLoading(true);
-    CustomerAPI.AddCustomer(item)
-      .then((result) => {
-        if (result.result.status == 200) {
 
-          dispatch(update_customer(item))
-          handleAlert("Confirmation", "Customer Registered Successfully.", "clipboard-check-outline", false);
+    const base64Img1 = await imageToBase64(item.imgPath1);
+    const base64Img2 = await imageToBase64(item.imgPath2);
+    const base64Img3 = await imageToBase64(item.imgPath3);
+
+    if (!base64Img1 || !base64Img2 || !base64Img3) {
+      handleAlert('Error', 'Failed to convert images to base64', 'exclamation-thick', false);
+      return;
+    }
+
+    const data = {
+      ...item,
+      base64Img1,
+      base64Img2,
+      base64Img3,
+    };
+
+    CustomerAPI.AddCustomer(data)
+      .then((result) => {
+        if (result.result) {
+          if (result.result.status == 200) {
+            dispatch(update_customer(item))
+            handleAlert("Confirmation", "Customer Registered Successfully.", "clipboard-check-outline", false);
+            setLoading(false);
+          }
+        }
+        else {
+          handleAlert("Customer Registration Failure", `${result.error.data.message}`, "exclamation-thick", false);
           setLoading(false);
         }
       })
       .catch(error => {
-        handleAlert("Internet Required", "You are not conncted to any Network.", "wifi-off", false)
+        handleAlert("Internet Required", `${error}`, "wifi-off", false)
+        // handleAlert("Internet Required", "You are not conncted to any Network.", "wifi-off", false)
         setLoading(false);
       });
   }
